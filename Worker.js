@@ -7,3 +7,5 @@ console.log(sa)
 let s=(a,b)=>a+b;
 console.log(s(24,34))
 
+
+//hello bro
