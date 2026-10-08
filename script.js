@@ -1,12 +1,29 @@
-function Animal(name){
-    this.name = name;
+class Karthik{
+    constructor(name, age){
+        this.name=name;
+        this.age=age;
+    }
+    view(){
+        console.log(`name is ${this.name} and age is ${this.age}`);
+    }
 }
-Animal.prototype.speak = function(){
-    console.log(this.name + ' makes a noise.');
+class Karthik1 extends Karthik{
+    constructor(name, age, id){
+        super(name, age);
+        this.id=id;
+    }   
+    view(){
+        console.log(`name is ${this.name}, age is ${this.age}, and id is ${this.id}`);
+    }
 }
-function Dog(name, breed){
-    Animal.call(this, name);
-    this.breed = breed;
+class Karthik2 extends Karthik{
+    constructor(name, age, id, role){
+        super(name, age, id);
+        this.role=role;
+    }   
+    view(){
+        console.log(`name is ${this.name}, age is ${this.age}, id is ${this.id}, and role is ${this.role}`);
+    }   
 }
 Dog.prototype.speak = function(){
     console.log(this.name + ' barks.');
